@@ -7,38 +7,42 @@
 
 import SwiftUI
 
-struct _View: View {
+struct SecondView: View {
     var body: some View {
         VStack {
             HStack (alignment: .bottom){
                 Text("Heading goes here.")
+                    .font(.title)
                 AsyncImage(url: URL(string:
-                    "http://placekitten.com/125/200"))
-                    .frame(width: 125, height: 200)
+                                        "http://placekitten.com/125/200"))
+                    .frame(width: 200, height: 200)
                 AsyncImage(url: URL(string:
-                    "http://placekitten.com/125/200"))
-                    .frame(width: 125, height: 200)
+                                        "http://placekitten.com/125/200"))
+                    .frame(width: 60, height: 80)
             }
             HStack {
-                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.")
+                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
                 Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.")
                 Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.")
                 VStack {
                     Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.")
                     HStack(alignment: .bottom) {
-                        Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.")
+                        Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+                            .font(Font.custom("Helvetica Neue", size: 6))
+                            .multilineTextAlignment(.trailing)
                         AsyncImage(url: URL(string:
-                            "http://placekitten.com/125/200"))
-                            .frame(width: 125, height: 200)
+                                                "http://placekitten.com/125/200"))
+                            .frame(width: 50, height: 250)
                     }
                 }
             }
+            
         }
     }
 }
 
-struct _View_Previews: PreviewProvider {
+struct SecondViewView_Previews: PreviewProvider {
     static var previews: some View {
-        _View()
+        SecondView()
     }
 }
