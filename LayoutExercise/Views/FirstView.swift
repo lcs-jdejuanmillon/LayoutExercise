@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct FirstView: View {
     var body: some View {
         HStack {
             VStack {
@@ -19,7 +19,7 @@ struct ContentView: View {
             }
             VStack {
                 Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
-                    
+                
                 
                 AsyncImage(url: URL(string:
                                         "http://placekitten.com/125/200"))
@@ -37,8 +37,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct FirstView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        FirstView()
     }
 }

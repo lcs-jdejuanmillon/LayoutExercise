@@ -11,13 +11,13 @@ struct SecondView: View {
     var body: some View {
         VStack {
             HStack (alignment: .bottom){
-                Text("Heading goes here.")
+                Text("Heading Goes Here")
                     .font(.title)
                 AsyncImage(url: URL(string:
-                                        "http://placekitten.com/125/200"))
+                                        "http://placekitten.com/200/200"))
                     .frame(width: 200, height: 200)
                 AsyncImage(url: URL(string:
-                                        "http://placekitten.com/125/200"))
+                                        "http://placekitten.com/60/80"))
                     .frame(width: 60, height: 80)
             }
             HStack {
@@ -31,7 +31,7 @@ struct SecondView: View {
                             .font(Font.custom("Helvetica Neue", size: 6))
                             .multilineTextAlignment(.trailing)
                         AsyncImage(url: URL(string:
-                                                "http://placekitten.com/125/200"))
+                                                "http://placekitten.com/50/250"))
                             .frame(width: 50, height: 250)
                     }
                 }
