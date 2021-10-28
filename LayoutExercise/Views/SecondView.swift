@@ -12,7 +12,6 @@ struct SecondView: View {
         VStack {
             HStack (alignment: .bottom){
                 Text("Heading Goes Here")
-                    .font(.title)
                 AsyncImage(url: URL(string:
                                         "http://placekitten.com/200/200"))
                     .frame(width: 200, height: 200)
